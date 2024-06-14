@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(233, 17, 197), #ad4dec); /* Tons pastel de rosa e lilás */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background-color: hwb(310 46% 14%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra normal */
+                0 0 10px hsla(271, 99%, 45%, 0.796); /* Efeito de luz ao redor */
+}
+
+.cartao {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-frente {
+    background-image: linear-gradient(to right, hsla(323, 64%, 58%, 0.726), hsl(4, 32%, 80%));
+    color: rgb(20, 20, 20);
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.cartao-logo {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.cartao-logo img {
+    width: 10px; /* Tamanho menor da imagem */
+}
+
+.cartao-info {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    right: 20px;
+   
+}
+
+.cartao-info span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-cartao {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-grupo {
+    display: flex;
+    gap: 5px;
+}
+
+.input-grupo input {
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1; /* Permite que os inputs ocupem todo o espaço */
+}
+
+.input-grupo select {
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 4px;
+    padding: 10px;
+    width: 80px;
+}
+
+.campo input[type="text"],
+.campo input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.submit {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: #4cae4c;
+}
